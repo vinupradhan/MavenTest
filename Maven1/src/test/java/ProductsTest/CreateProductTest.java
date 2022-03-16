@@ -18,11 +18,7 @@ public class CreateProductTest {
 		
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver=new ChromeDriver();
-		
-		
-		
-		
-		
+				
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		driver.get("http://localhost:8888");
@@ -43,6 +39,7 @@ public class CreateProductTest {
 		actions.moveToElement(AdminEle).perform();
 		driver.findElement(By.linkText("Sign Out")).click();
 		
+		System.out.println("Product Created");
 		driver.quit();
 	}
 }
