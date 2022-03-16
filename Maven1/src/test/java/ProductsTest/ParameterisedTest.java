@@ -7,6 +7,7 @@ public class ParameterisedTest {
 	@Test
 	public void parameterisedTest()
 	{
-		System.out.println("browser");	
+		String browser = System.getProperty("browser");
+		System.out.println(browser);
 	}
 }
